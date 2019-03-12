@@ -1,11 +1,11 @@
 @charset "utf-8";
 
 /*
-Project 3
+Project 4
 
 Wild Sky Lodge Heli-Boarding Tours
 Author: Kalvin Booker
-Date: 	2019-02-19
+Date: 	2019-03-11
 
 Filename: index.html
 */
@@ -64,6 +64,8 @@ h3 {
 	color: hsla(205,100%,65%,.8);
 }
 
+/*Body Elements*/
+
 div#main {
 	display: inline;
 	overflow: hidden;
@@ -109,8 +111,6 @@ section#conditions img {
 	margin-left: 50px;
 }
 
-
-
 section#snowfall {
 	display: block;
 	width: 60%;
@@ -126,21 +126,15 @@ article.about {
 }
 
 div.comments {
-	/*M5LO5 Demonstrate the use of flexboxes on a web page
-	This will display my div element as flexboxes*/
 	display: -webkit-flex;
 	display: flex;
 	width: 100%;
 	
-	/*M5LO7 Demonstrate use of properties of flexbox containers
-	These flexboxes will line up horizontially inline*/
 	-webkit-flex-flow: row wrap;
 	flex-flow: row wrap;
 }
 
 div#V1 {
-	/*M5LO6 Demonstrate use of properties of flexbox items
-	This sets the width of each flexbox to 400px and keeps the growth/shink rate at a constant ratio*/
 	-webkit-flex: 1 1 400px;
 	flex: 1 1 400px;
 }
@@ -155,9 +149,55 @@ div#V3 {
 	flex: 1 1 400px;
 }
 
+div#V4 {
+	-webkit-flex: 1 1 400px;
+	flex: 1 1 400px;
+}
+
 div.comments > div {
 	padding: 10px;
 	background-color: hsla(205,100%,65%,.8);
+}
+
+div.media {
+	display: -webkit-flex;
+	display: flex;
+	width: 100%;
+	margin: 100px;
+	position: relative;
+	top: 50px;
+	
+	-webkit-flex-flow: row wrap;
+	flex-flow: row wrap;
+}
+
+div#nwac {
+	-webkit-flex: 1 1 900px;
+	flex: 1 1 900px;
+}
+
+div#video {
+	-webkit-flex: 1 1 600px;
+	flex: 1 1 600px;	
+	position: relative;
+	top: 100px;
+}
+
+div#audio img {
+	opacity: 0.4;
+	position: relative;
+	bottom: 19px;
+}
+
+/*M8LO12 Demonstrate how to format media with CSS
+This makes the audio player invisible until hovered over.  This prevents the audio player from taking away from the overall apperance and feel of the page*/
+div#audio audio {
+	opacity: 0; 
+}
+
+div#audio audio:hover {
+	opacity: 1;
+	transition: opacity 1s ease-in;	
 }
 
 
@@ -180,6 +220,11 @@ nav.top_menu ul li a:hover, nav.top_menu ul li a:active {
 	color: hsla(205,100%,65%,.8);
 	font-size: 1.4em;
 	letter-spacing: 0.2em;
+	/*M8LO10 Demonstrate a CSS animation or transition
+	This allows the text to grow, widen apart, and change color, which increases the dramatic feel of the links*/
+	transition: color 1s linear,
+				font-size 0.5s ease,
+				letter-spacing 0.5s ease;
  }
  
 nav.external {
@@ -254,8 +299,6 @@ footer {
  
  /*Table Styles*/
  
- /*M6LO7 Demonstrate how to format a table with CSS
- This table will have a thin blue border with big, grey font, collasped borders, with each cell spaced out from each other*/
  
 table#snowfall {
 	border: 1.5px solid hsla(205,100%,65%,.8);
@@ -301,8 +344,6 @@ table#snowfall_table tfoot {
 
 
 /*Media Under 480px*/
-/*M5LO3 Use media queries to format a page differently for phones vs. PCs
-Any media device with a screen display no bigger than 480px will ultilize the rules below*/
 
 @media only screen and (max-width: 480px) {
 	
@@ -338,8 +379,6 @@ Any media device with a screen display no bigger than 480px will ultilize the ru
 		display: none;
 	}
 
-/*M5LO4 Use CSS for pull down menus
-This will enable the submenu to display when clicked on*/
 	nav.top_menu a.submenu:hover+ul.sub, ul.sub:hover {
 		display: block;
 	}
