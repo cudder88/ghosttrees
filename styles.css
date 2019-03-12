@@ -1,0 +1,347 @@
+@charset "utf-8";
+
+/*
+Project 3
+
+Wild Sky Lodge Heli-Boarding Tours
+Author: Kalvin Booker
+Date: 	2019-02-19
+
+Filename: index.html
+*/
+
+
+ /*
+ Styles Reset Style
+ */
+ 
+main, header, nav, figure, footer, article, ul, li {	
+	display: block;
+}
+
+header, body, article, div, figure, figcaption, footer, html, nav, img, li, main, li, ul, p, h1, h2, h3, h4, h5, dt,dd {
+	font-family: 'Trebuchet MS', Verdana, sans-serif;
+}
+
+ nav ul {
+	list-style: none;
+	list-style-type: none;
+}
+
+nav a {
+	text-decoration: none;
+}
+
+/*Body*/
+
+body.home {
+	background-image: url(mountain_logo.png);
+	background-repeat: no-repeat;
+	position: static;
+	background-position: 70% 79%;
+	background-size: auto;
+	opacity: 0.99;
+}
+
+
+/*Headers*/
+
+
+h1 {
+	text-align: center;
+	letter-spacing: 0.1em;
+	margin-left: 650px;
+	margin-right: 650px;
+	color: white;
+	border: 2px groove hsl(205, 83%, 43%);
+	border-radius: 12px;
+	background-image: linear-gradient(to bottom right, hsl(208, 83%, 40%), hsla(205,100%,70%,.8));
+}
+
+h3 {
+	letter-spacing: 0.1em;
+	font-size: 2em;
+	color: hsla(205,100%,65%,.8);
+}
+
+div#main {
+	display: inline;
+	overflow: hidden;
+}
+
+figure#location {
+	font-family: 'Trebuchet MS', Verdana, sans-serif;
+	font-size: 0.8em;	
+	text-align: center; 
+}
+
+article {
+	font-family: 'Trebuchet MS', Verdana, sans-serif;
+}
+
+article.location {
+	text-align: left;
+	margin-left: 50px;
+	width: 40%;
+}
+
+div.about_title {
+	font-family: 'Trebuchet MS', Verdana, sans-serif;
+	font-size: 1.4em;
+	font-weight: bold;
+	letter-spacing: 0.1em;
+	background-color: white;
+	clear: left;
+	position: relative;
+	top: 12px;
+}
+
+section#conditions {
+	position: relative;
+	width: 20%;
+	top: 180px;
+	border: 1px solid gray;
+	margin-left: 60px;
+}
+
+section#conditions img {
+	border: 1px solid gray;
+	margin-left: 50px;
+}
+
+
+
+section#snowfall {
+	display: block;
+	width: 60%;
+	float: right;
+	margin-right: 60px;
+	height: 300px;
+	position: relative;
+	bottom: 165px;
+}
+
+article.about {
+	padding-bottom: 10px;
+}
+
+div.comments {
+	/*M5LO5 Demonstrate the use of flexboxes on a web page
+	This will display my div element as flexboxes*/
+	display: -webkit-flex;
+	display: flex;
+	width: 100%;
+	
+	/*M5LO7 Demonstrate use of properties of flexbox containers
+	These flexboxes will line up horizontially inline*/
+	-webkit-flex-flow: row wrap;
+	flex-flow: row wrap;
+}
+
+div#V1 {
+	/*M5LO6 Demonstrate use of properties of flexbox items
+	This sets the width of each flexbox to 400px and keeps the growth/shink rate at a constant ratio*/
+	-webkit-flex: 1 1 400px;
+	flex: 1 1 400px;
+}
+
+div#V2 {
+	-webkit-flex: 1 1 400px;
+	flex: 1 1 400px;
+}
+
+div#V3 {
+	-webkit-flex: 1 1 400px;
+	flex: 1 1 400px;
+}
+
+div.comments > div {
+	padding: 10px;
+	background-color: hsla(205,100%,65%,.8);
+}
+
+
+/*Navigation Top Menu*/
+
+
+nav.top_menu > ul {
+	line-height: 3em;
+	padding-left: 5px;
+	letter-spacing: 0.2em;
+	text-align: center;
+	font-size: 1.2em;
+ }
+
+nav.top_menu ul li a:link, nav.top_menu ul li a:visited {
+	color: rgb(130,130,130);
+ }
+ 
+nav.top_menu ul li a:hover, nav.top_menu ul li a:active {
+	color: hsla(205,100%,65%,.8);
+	font-size: 1.4em;
+	letter-spacing: 0.2em;
+ }
+ 
+nav.external {
+	 position: absolute;
+	 left: 10%; 
+ }
+ 
+nav.top_menu li.top {
+	 display: none;
+ }
+ 
+nav.top_menu li.top {
+	line-height: 3em;
+	padding-left: 5px;
+	letter-spacing: 0.2em;
+	text-align: center;
+	font-size: 1.2em;
+ }
+ 
+ nav.top_menu ul li.top a:link, nav.top_menu ul li.top a:visited {
+	color: rgb(130,130,130);
+ }
+ 
+ 
+ /*Navigation Banner Menu*/
+ 
+ 
+h2 {
+	float: left;
+	margin-top: 0px;	
+	text-align: center;
+	letter-spacing: 0.2em;
+	font-size: 1.6em;
+	padding-left: 100px;
+	padding-right: 100px;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	color: white;
+	background-image: linear-gradient(to bottom right, hsl(208, 83%, 40%), hsla(205,100%,65%,.8));
+	box-shadow: hsla(205,100%,40%,.8) 5px 5px;
+}
+ 
+nav#banner ul li {
+	float: right;
+	font-size: 1.2em;
+	text-align: center;
+	width: 10%;
+	background: white;
+	padding-top: 12.5px;
+}
+
+nav#banner ul li a:link, nav#banner ul li a:visited {
+	color: rgb(130,130,130);
+}
+
+nav#banner ul li a:hover, nav#banner ul li a:active {
+	color: hsla(205,100%,65%,.8);
+	font-size: 1.3em;
+}
+ 
+  
+ /*Footer*/
+ 
+footer {
+	color: rgb(100,100,100);
+	text-align: center;
+	position: relative;
+	bottom: -150px;
+	clear: both; 
+ }
+ 
+ 
+ /*Table Styles*/
+ 
+ /*M6LO7 Demonstrate how to format a table with CSS
+ This table will have a thin blue border with big, grey font, collasped borders, with each cell spaced out from each other*/
+ 
+table#snowfall {
+	border: 1.5px solid hsla(205,100%,65%,.8);
+	border-collapse: collapse;
+	width: 100%;
+}
+
+h5 {
+	font-size: 1.6em;
+	color: rgba(60,60,60,0.9);
+	margin: 20px;
+	line-height: 0px;
+}
+
+table#snowfall_table tr {
+	line-height: 80px;
+}
+
+table#snowfall_table tfoot tr {
+	line-height: 40px;
+}
+
+table#snowfall_table tbody td {
+	text-align: center;
+	font-size: 2em;
+	color: rgba(60,60,60,0.9);
+}	
+
+table#snowfall_table thead {
+	font-size: 1.4em;
+	color: rgba(60,60,60,0.9);
+}
+
+table#snowfall_table tbody th {
+	font-size: 1.4em;
+	color: rgba(60,60,60,0.9);
+}
+
+table#snowfall_table tfoot {
+	text-align: right;
+}
+
+
+
+/*Media Under 480px*/
+/*M5LO3 Use media queries to format a page differently for phones vs. PCs
+Any media device with a screen display no bigger than 480px will ultilize the rules below*/
+
+@media only screen and (max-width: 480px) {
+	
+	body.home > div#main {
+		display: none;
+	}
+	
+	h1 {
+		margin-left: 0px;
+		margin-right: 0px;
+	}
+	
+	body.home {
+		background-position: 50% 130%;
+		background-size: 300px 180px;
+	}
+	
+	footer {
+		bottom: -230px;
+		clear: both; 
+	 }
+	 
+	nav.top_menu ul.main {
+	 display: none;
+	}
+	
+	nav.top_menu li.top {
+	 display: block;
+	 margin-bottom: 50px;
+	}
+	
+	nav.top_menu ul.sub {
+		display: none;
+	}
+
+/*M5LO4 Use CSS for pull down menus
+This will enable the submenu to display when clicked on*/
+	nav.top_menu a.submenu:hover+ul.sub, ul.sub:hover {
+		display: block;
+	}
+	
+}
